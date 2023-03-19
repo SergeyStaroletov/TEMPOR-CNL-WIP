@@ -2,4 +2,6 @@
 
 TEMPOR: A CNL for reqirements for control software.
 
-Grammar <a href="iae.tempor/src/iae/Tempor.xtext">is here</a>
+Initial classification of LTL formulas <a href="PatternsClassification">is here</a> <br>
+
+Grammar <a href="iae.tempor/src/iae/Tempor.xtext">is here</a> 
