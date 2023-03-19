@@ -1,0 +1,69 @@
+G (¬ trig);
+G (trig → inv);If trig, then inv.
+G (trig → rea);If trig, then immediately there will be rea.
+G (trig → (inv ∧ rea));If trig, then inv and immediately it will be rea.
+G (trig → (rel v rea));If trig, then rel or immediately will be rea.
+G (trig → (rel v (inv ∧ rea)));If trig, then rel or inv and at the same time it will immediately be rea.
+G (trig → (G inv));If trig will always be inv.
+G (trig → (inv W rel));If trig, then inv, until perhaps rel happens.
+G (trig → (inv W (inv ∧ rea)));If trig, then inv, until perhaps rea happens to keep inv.
+G (trig → (inv W (rel v (inv ∧ rea))));If trig, then inv will be for now, perhaps not rel or rea at inv.
+G (trig → ((¬ del) W rea));
+G (trig → ((¬ del) W (rel v rea)));If trig then ~del until perhaps rel or rea happens.
+G (trig → ((¬ fin) W (fin ∧ rea)));If trig, then perhaps fin will happen and then immediately there will be rea.
+G (trig → ((¬ fin) W (rel v (fin ∧ rea))));If trig, then perhaps rel or fin will happen along with an immediate rea.
+G (trig → ((¬ fin) W (fin ∧ (G (¬ del)))));If trig, then fin will probably happen and from then on there will always be ~del.
+G (trig → ((¬ fin) W (fin ∧ ((¬ del) W rea))));If trig, then perhaps fin will happen and from that point on there will be ~del until perhaps rea occurs.
+G (trig → ((inv ∧ (¬ del)) W (inv ∧ rea)));If trig, then inv and ~del, until perhaps rea happens to keep inv.
+G (trig → ((inv ∧ (¬ del)) W (rel v (inv ∧ rea))));If trig, then inv and ~del, until perhaps rel or rea happens, keeping inv.
+G (trig → ((inv ∧ (¬ fin)) W (rel v (fin ∧ inv))));If trig, then inv and not ~fin, until perhaps rel or fin happens to keep inv.
+G (trig → ((inv ∧ (¬ fin)) W (rel v (fin ∧ (inv ∧ rea)))));If trig, then inv and not ~fin, until perhaps rel or fin happens, keeping inv and immediate rea.
+G (trig → ((inv ∧ (¬ fin)) W (fin ∧ inv)));If trig, then inv and not ~fin until perhaps fin happens to keep inv.
+G (trig → ((inv ∧ (¬ fin)) W (fin ∧ (inv ∧ rea))));If trig, then inv and not ~fin, until perhaps fin happens to keep inv and immediately rea.
+G (trig → ((inv ∧ (¬ fin)) W (fin ∧ (G (inv ∧ (¬ del))))));If trig, then inv and not ~fin, until perhaps fin happens and from then on there will always be inv and ~del.
+G (trig → ((inv ∧ (¬ fin)) W (fin ∧ (inv W (inv ∧ rea)))));If trig, then inv and not ~fin until perhaps fin happens and from then on inv will be until perhaps rea happens with inv saved.
+G (trig → ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (inv ∧ rea)))));If trig, then inv and not ~fin until perhaps fin happens and from then on inv will be along with ~del until perhaps rea happens with inv saved.
+G ((trig ∧ (¬ rel)) → ((¬ fin) W (fin ∧ ((¬ del) W rel))));If trig and not rel, then perhaps fin will happen and from then on there will be ~del until perhaps this rel occurs.
+G ((trig ∧ (¬ rel)) → ((¬ fin) W (fin ∧ ((¬ del) W (rel v rea)))));If trig and not rel, then perhaps fin will happen and from then on it will be ~del until perhaps it is rel or rea.
+G ((trig ∧ (¬ rel)) → ((inv ∧ (¬ fin)) W (fin ∧ (inv W rel))));If trig and not rel, then inv and not ~fin until perhaps fin happens and from then on inv will be until perhaps this rel happens.
+G ((trig ∧ (¬ rel)) → ((inv ∧ (¬ fin)) W (fin ∧ (inv W (rel v (inv ∧ rea))))));If trig and not rel, then inv and not ~fin, until fin may happen and from then on inv will be, until it may be rel or rea with inv preserved.
+G ((trig ∧ (¬ rel)) → ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W rel))));If trig and not rel, then inv and not ~fin until perhaps fin happens and from then on inv will be along with ~del until perhaps this rel happens.
+G ((trig ∧ (¬ rel)) → ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (rel v (inv ∧ rea))))));If trig and not rel, then inv and not ~fin, until perhaps fin happens, and from then on inv will be along with ~del, until perhaps it is rel or rea with inv preserved.
+;
+G inv;Always inv.
+G rea;There is always a rea.
+G (inv ∧ rea);Always inv and immediately there will be rea.
+G (rel v rea);Always either rel or immediately will be rea.
+G (rel v (inv ∧ rea));Always either rel or inv and at the same time it will immediately be rea.
+G (inv W rel) = G( (G inv) v (inv U rel)) = (G inv) v G(inv v rel);Always inv or it alternates with rel.
+G ((¬ del) W rea);
+G ((¬ del) W (rel v rea)) = (G ¬ del) v G(¬ del v rel v rea);Always ~del and maybe occasionally rel or rea.
+G (inv W (inv ∧ rea)) = (G inv) ∧ G(inv v rea);Always inv and maybe occasionally rea.
+G (inv W (rel v (inv ∧ rea)));Always * and maybe from time to time * or *.
+G ((¬ fin) W (fin ∧ rea));Either it is not always fin, or it happens and then it immediately becomes rea.
+G ((¬ fin) W (rel v (fin ∧ rea)));Either it is not always fin, or it happens, and then it immediately becomes rea, or rel happens.
+G ((¬ fin) W (fin ∧ (G (¬ del))));Either it doesn't always fin, or it happens and will always be ~del from now on.
+G ((¬ fin) W (fin ∧ ((¬ del) W rea)));Either it's not always fin, or it happens and from then on it will be ~del until maybe rea happens.
+G ((inv ∧ (¬ del)) W (inv ∧ rea));Always inv and ~del until perhaps rea happens.
+G ((inv ∧ (¬ del)) W (rel v (inv ∧ rea)));inv and ~del until perhaps rel happens, or rea keeps inv.
+G ((inv ∧ (¬ fin)) W (rel v (fin ∧ inv)));Either always inv and not fin, or rel will happen, or fin with inv.
+G ((inv ∧ (¬ fin)) W (fin ∧ (inv ∧ rea)));Always inv, and fin possibly comes with rea.
+G ((inv ∧ (¬ fin)) W (rel v (fin ∧ (inv ∧ rea))));Either always inv and not fin, or rel will happen, or fin with inv and immediate rea.
+G ((inv ∧ (¬ fin)) W (fin ∧ (G (inv ∧ (¬ del)))));Either always inv and not fin, or fin will happen and from now on there will always be inv and ~del.
+G ((inv ∧ (¬ fin)) W (fin ∧ (inv W (inv ∧ rea))));Always inv and maybe fin and then maybe rea.
+G ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (inv ∧ rea))));Always inv and possibly fin, and from then on there will be ~del until perhaps rea.
+G ((¬rel) → ((¬ fin) W (fin ∧ ((¬ del) W rel))));Whenever it's not rel, fin will probably come, and from that point on there will be ~del until maybe rel happens.
+G ((¬rel) → ((¬ fin) W (fin ∧ ((¬ del) W (rel v rea)))));Whenever it's not rel, fin will probably come, and from that point on there will be ~del until maybe rel or rea happens.
+G ((¬rel) → ((inv ∧ (¬ fin)) W (fin ∧ (inv W rel))));Whenever not rel, then inv and not fin, until perhaps fin happens, and from that moment on, inv will be, until perhaps this rel happens.
+G ((¬rel) → ((inv ∧ (¬ fin)) W (fin ∧ (inv W (rel v (inv ∧ rea))))));Whenever it's not rel, then inv and not fin, until perhaps fin happens, and from that moment on, inv will be, until perhaps it's rel or rea with inv preserved.
+G ((¬rel) → ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W rel))));Whenever it's not rel, it's inv and not fin, until perhaps fin happens, and from that point on, inv and ~del will be, until perhaps it's rel.
+G ((¬rel) → ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (rel v (inv ∧ rea))))));Whenever it's not rel, it's inv and not fin, until perhaps fin happens, and from that moment on, inv and ~del will be, until perhaps it's rel or rea with inv preserved.
+;
+;
+;
+G (rel v ((¬ fin) W (fin ∧ ((¬ del) W rel))));Always either rel or maybe fin will happen, and from that point on there will be ~del until maybe rel happens.
+G (rel v ((¬ fin) W (fin ∧ ((¬ del) W (rel v rea)))));It's always either rel or maybe fin happens, and from that point on there's ~del until maybe rel or rea happens.
+G (rel v ((inv ∧ (¬ fin)) W (fin ∧ (inv W rel))));Always either rel or inv and not fin until perhaps fin happens and from then on inv will be until perhaps that rel happens.
+G (rel v ((inv ∧ (¬ fin)) W (fin ∧ (inv W (rel v (inv ∧ rea))))));Always either rel or inv and not fin until perhaps fin happens and from then on inv will be until perhaps it is rel or rea with inv remaining.
+G (rel v ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W rel))));Always either rel or inv and not fin until fin might happen and from then on inv and ~del will be until maybe rel happens.
+G (rel v ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (rel v (inv ∧ rea))))));Always either rel or inv and not fin, until perhaps fin happens and from then on inv and ~del will be, until perhaps it's rel or rea with inv preserved.

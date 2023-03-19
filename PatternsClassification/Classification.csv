@@ -1,0 +1,243 @@
+false*;del;fin;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;del;fin;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;del;fin;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;del;true*;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;del;true*;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;del;true*;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;del;false*;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;del;false*;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;del;false*;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;fin;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;fin;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;fin;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;true*;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;true*;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;true*;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;false*;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;false*;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;false*;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;fin;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;fin;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;fin;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;true*;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;true*;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;true*;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;false*;rea;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;false*;true*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;false*;false*;false*;false*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;true*;false*;true*;G (¬ trig);false*;true*;0;0;0;0
+false*;true*;true*;false*;inv;G (¬ trig);false*;true*;0;0;0;0
+rel;del;true*;rea;true*;G (trig → ((¬ del) W (rel v rea)));G ((¬ del) W (rel v rea));true*;0;0;0;0
+false*;del;true*;rea;true*;G (trig → ((¬ del) W rea));G ((¬ del) W rea);true*;0;0;0;0
+rel;del;true*;false*;true*;G (trig → ((¬ del) W rel));G ((¬ del) W rel);true*;0;0;0;0
+false*;del;fin;rea;true*;G (trig → ((¬ fin) W (fin ∧ ((¬ del) W rea))));G ((¬ fin) W (fin ∧ ((¬ del) W rea)));true*;0;0;0;0
+false*;del;fin;false*;true*;G (trig → ((¬ fin) W (fin ∧ (G (¬ del)))));G ((¬ fin) W (fin ∧ (G (¬ del))));true*;0;0;0;0
+false*;true*;fin;rea;true*;G (trig → ((¬ fin) W (fin ∧ rea)));G ((¬ fin) W (fin ∧ rea));true*;0;0;0;0
+rel;true*;fin;rea;true*;G (trig → ((¬ fin) W (rel v (fin ∧ rea))));G ((¬ fin) W (rel v (fin ∧ rea)));true*;0;0;0;0
+rel;true*;fin;true*;true*;G (trig → ((¬ fin) W rel));G ((¬ fin) W rel);true*;0;0;0;0
+rel;true*;fin;false*;true*;G (trig → ((¬ fin) W rel));G ((¬ fin) W rel);true*;0;0;0;0
+rel;false*;fin;rea;true*;G (trig → ((¬ fin) W rel));G ((¬ fin) W rel);true*;0;0;0;0
+rel;false*;fin;true*;true*;G (trig → ((¬ fin) W rel));G ((¬ fin) W rel);true*;0;0;0;0
+rel;del;fin;true*;true*;G (trig → ((¬ fin) W rel));G ((¬ fin) W rel);true*;0;0;0;0
+rel;false*;fin;false*;true*;G (trig → ((¬ fin) W rel));G ((¬ fin) W rel);true*;0;0;0;0
+false*;del;true*;rea;inv;G (trig → ((inv ∧ (¬ del)) W (inv ∧ rea)));G ((inv ∧ (¬ del)) W (inv ∧ rea));true*;0;0;0;0
+rel;del;true*;rea;inv;G (trig → ((inv ∧ (¬ del)) W (rel v (inv ∧ rea))));G ((inv ∧ (¬ del)) W (rel v (inv ∧ rea)));true*;0;0;0;0
+rel;del;true*;false*;inv;G (trig → ((inv ∧ (¬ del)) W rel));G ((inv ∧ (¬ del)) W rel);true*;0;0;0;0
+false*;del;fin;rea;inv;G (trig → ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (inv ∧ rea)))));G ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (inv ∧ rea))));true*;0;0;0;0
+false*;del;fin;false*;inv;G (trig → ((inv ∧ (¬ fin)) W (fin ∧ (G (inv ∧ (¬ del))))));G ((inv ∧ (¬ fin)) W (fin ∧ (G (inv ∧ (¬ del)))));true*;0;0;0;0
+false*;true*;fin;rea;inv;G (trig → ((inv ∧ (¬ fin)) W (fin ∧ (inv ∧ rea))));G ((inv ∧ (¬ fin)) W (fin ∧ (inv ∧ rea)));true*;0;0;0;0
+false*;false*;fin;rea;inv;G (trig → ((inv ∧ (¬ fin)) W (fin ∧ (inv W (inv ∧ rea)))));G ((inv ∧ (¬ fin)) W (fin ∧ (inv W (inv ∧ rea))));true*;0;0;0;0
+rel;true*;fin;rea;inv;G (trig → ((inv ∧ (¬ fin)) W (rel v (fin ∧ (inv ∧ rea)))));G ((inv ∧ (¬ fin)) W (rel v (fin ∧ (inv ∧ rea))));true*;0;0;0;0
+rel;true*;fin;true*;inv;G (trig → ((inv ∧ (¬ fin)) W (rel v (fin ∧ inv))));G ((inv ∧ (¬ fin)) W (rel v (fin ∧ inv)));true*;0;0;0;0
+rel;false*;fin;true*;inv;G (trig → ((inv ∧ (¬ fin)) W (rel v (fin ∧ inv))));G ((inv ∧ (¬ fin)) W (rel v (fin ∧ inv)));true*;0;0;0;0
+rel;del;fin;true*;inv;G (trig → ((inv ∧ (¬ fin)) W (rel v (fin ∧ inv))));G ((inv ∧ (¬ fin)) W (rel v (fin ∧ inv)));true*;0;0;0;0
+rel;true*;fin;false*;inv;G (trig → ((inv ∧ (¬ fin)) W rel));G ((inv ∧ (¬ fin)) W rel);true*;0;0;0;0
+false*;del;true*;false*;true*;G (trig → (G (¬ del)));G (¬ del);true*;0;0;0;0
+false*;true*;fin;false*;true*;G (trig → (G (¬ fin)));G (¬ fin);true*;0;0;0;0
+false*;del;true*;false*;inv;G (trig → (G (inv ∧ (¬ del))));G (inv ∧ (¬ del));true*;0;0;0;0
+false*;true*;fin;false*;inv;G (trig → (G (inv ∧ (¬ fin))));G (inv ∧ (¬ fin));true*;0;0;0;0
+false*;true*;true*;rea;inv;G (trig → (inv ∧ rea));G (inv ∧ rea);true*;0;0;0;0
+false*;false*;true*;rea;inv;G (trig → (inv W (inv ∧ rea)));G (inv W (inv ∧ rea));true*;0;0;0;0
+rel;false*;true*;rea;inv;G (trig → (inv W (rel v (inv ∧ rea))));G (inv W (rel v (inv ∧ rea)));true*;0;0;0;0
+rel;del;false*;rea;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;del;false*;true*;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;del;false*;false*;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;true*;false*;rea;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;true*;false*;true*;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;true*;false*;false*;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;false*;false*;rea;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;false*;false*;true*;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;false*;false*;false*;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;false*;true*;false*;inv;G (trig → (inv W rel));G (inv W rel);true*;0;0;0;0
+rel;del;fin;rea;true*;G ((trig ∧ (¬ rel)) → ((¬ fin) W (fin ∧ ((¬ del) W (rel v rea)))));G (rel v ((¬ fin) W (fin ∧ ((¬ del) W (rel v rea)))));true*;0;0;0;0
+rel;del;fin;false*;true*;G ((trig ∧ (¬ rel)) → ((¬ fin) W (fin ∧ ((¬ del) W rel))));G (rel v ((¬ fin) W (fin ∧ ((¬ del) W rel))));true*;0;0;0;0
+rel;del;fin;rea;inv;G ((trig ∧ (¬ rel)) → ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (rel v (inv ∧ rea))))));G (rel v ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W (rel v (inv ∧ rea))))));true*;0;0;0;0
+rel;del;fin;false*;inv;G ((trig ∧ (¬ rel)) → ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W rel))));G (rel v ((inv ∧ (¬ fin)) W (fin ∧ ((inv ∧ (¬ del)) W rel))));true*;0;0;0;0
+rel;false*;fin;rea;inv;G ((trig ∧ (¬ rel)) → ((inv ∧ (¬ fin)) W (fin ∧ (inv W (rel v (inv ∧ rea))))));G (rel v ((inv ∧ (¬ fin)) W (fin ∧ (inv W (rel v (inv ∧ rea))))));true*;0;0;0;0
+rel;false*;fin;false*;inv;G ((trig ∧ (¬ rel)) → ((inv ∧ (¬ fin)) W (fin ∧ (inv W rel))));G (rel v ((inv ∧ (¬ fin)) W (fin ∧ (inv W rel))));true*;0;0;0;0
+rel;true*;true*;rea;inv;G (trig → (rel v (inv ∧ rea)));G (rel v (inv ∧ rea));true*;0;0;0;0
+rel;del;true*;true*;inv;G (trig → (rel v inv));G (rel v inv);true*;0;0;0;0
+rel;true*;true*;true*;inv;G (trig → (rel v inv));G (rel v inv);true*;0;0;0;0
+rel;false*;true*;true*;inv;G (trig → (rel v inv));G (rel v inv);true*;0;0;0;0
+rel;true*;true*;rea;true*;G (trig → (rel v rea));G (rel v rea);true*;0;0;0;0
+false*;del;fin;true*;inv;G (trig → ((inv ∧ (¬ fin)) W (fin ∧ inv)));G inv;true*;0;0;0;0
+false*;true*;fin;true*;inv;G (trig → ((inv ∧ (¬ fin)) W (fin ∧ inv)));G inv;true*;0;0;0;0
+false*;false*;fin;true*;inv;G (trig → ((inv ∧ (¬ fin)) W (fin ∧ inv)));G inv;true*;0;0;0;0
+false*;del;false*;rea;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;del;false*;true*;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;del;false*;false*;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;true*;false*;rea;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;true*;false*;true*;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;true*;false*;false*;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;false*;false*;rea;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;false*;false*;true*;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;false*;false*;false*;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;false*;fin;false*;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;false*;true*;false*;inv;G (trig → (G inv));G inv;true*;0;0;0;0
+false*;del;true*;true*;inv;G (trig → inv);G inv;true*;0;0;0;0
+false*;true*;true*;true*;inv;G (trig → inv);G inv;true*;0;0;0;0
+false*;false*;true*;true*;inv;G (trig → inv);G inv;true*;0;0;0;0
+false*;true*;true*;rea;true*;G (trig → rea);G rea;true*;0;0;0;0
+rel;del;false*;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;del;false*;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;del;false*;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;false*;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;false*;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;false*;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;false*;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;false*;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;false*;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;true*;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;del;true*;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;true*;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;true*;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;true*;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;true*;false*;inv;G (trig → rel);G rel;true*;0;0;0;0
+rel;del;true*;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;del;true*;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;true*;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;true*;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;true*;false*;true*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;fin;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;fin;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;true*;fin;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;fin;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;fin;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;del;fin;rea;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;del;fin;true*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;del;fin;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+rel;false*;fin;false*;false*;G (trig → rel);G rel;true*;0;0;0;0
+true*;del;fin;rea;inv;true*;true*;true*;0;0;0;0
+false*;false*;fin;rea;true*;true*;true*;true*;0;0;0;0
+false*;false*;true*;rea;true*;true*;true*;true*;0;0;0;0
+false*;del;fin;true*;true*;true*;true*;true*;0;0;0;0
+false*;true*;fin;true*;true*;true*;true*;true*;0;0;0;0
+false*;false*;fin;true*;true*;true*;true*;true*;0;0;0;0
+false*;del;true*;true*;true*;true*;true*;true*;0;0;0;0
+false*;true*;true*;true*;true*;true*;true*;true*;0;0;0;0
+false*;false*;true*;true*;true*;true*;true*;true*;0;0;0;0
+false*;del;false*;true*;true*;true*;true*;true*;0;0;0;0
+false*;true*;false*;true*;true*;true*;true*;true*;0;0;0;0
+false*;false*;false*;true*;true*;true*;true*;true*;0;0;0;0
+true*;del;false*;rea;inv;true*;true*;true*;0;0;0;0
+true*;del;false*;rea;true*;true*;true*;true*;0;0;0;0
+true*;del;false*;rea;false*;true*;true*;true*;0;0;0;0
+true*;del;false*;true*;inv;true*;true*;true*;0;0;0;0
+true*;del;false*;true*;true*;true*;true*;true*;0;0;0;0
+true*;del;false*;true*;false*;true*;true*;true*;0;0;0;0
+true*;del;false*;false*;inv;true*;true*;true*;0;0;0;0
+true*;del;false*;false*;true*;true*;true*;true*;0;0;0;0
+true*;del;false*;false*;false*;true*;true*;true*;0;0;0;0
+true*;true*;false*;rea;inv;true*;true*;true*;0;0;0;0
+true*;true*;false*;rea;true*;true*;true*;true*;0;0;0;0
+true*;true*;false*;rea;false*;true*;true*;true*;0;0;0;0
+true*;true*;false*;true*;inv;true*;true*;true*;0;0;0;0
+true*;true*;false*;true*;true*;true*;true*;true*;0;0;0;0
+true*;true*;false*;true*;false*;true*;true*;true*;0;0;0;0
+true*;true*;false*;false*;inv;true*;true*;true*;0;0;0;0
+true*;true*;false*;false*;true*;true*;true*;true*;0;0;0;0
+true*;true*;false*;false*;false*;true*;true*;true*;0;0;0;0
+true*;false*;false*;rea;inv;true*;true*;true*;0;0;0;0
+true*;false*;false*;rea;true*;true*;true*;true*;0;0;0;0
+true*;false*;false*;rea;false*;true*;true*;true*;0;0;0;0
+true*;false*;false*;true*;inv;true*;true*;true*;0;0;0;0
+true*;false*;false*;true*;true*;true*;true*;true*;0;0;0;0
+true*;false*;false*;true*;false*;true*;true*;true*;0;0;0;0
+true*;false*;false*;false*;inv;true*;true*;true*;0;0;0;0
+true*;false*;false*;false*;true*;true*;true*;true*;0;0;0;0
+true*;false*;false*;false*;false*;true*;true*;true*;0;0;0;0
+false*;del;false*;rea;true*;true*;true*;true*;0;0;0;0
+false*;del;false*;false*;true*;true*;true*;true*;0;0;0;0
+false*;true*;false*;rea;true*;true*;true*;true*;0;0;0;0
+false*;true*;false*;false*;true*;true*;true*;true*;0;0;0;0
+false*;false*;false*;rea;true*;true*;true*;true*;0;0;0;0
+false*;false*;false*;false*;true*;true*;true*;true*;0;0;0;0
+rel;del;false*;rea;true*;true*;true*;true*;0;0;0;0
+rel;del;false*;true*;true*;true*;true*;true*;0;0;0;0
+rel;del;false*;false*;true*;true*;true*;true*;0;0;0;0
+rel;true*;false*;rea;true*;true*;true*;true*;0;0;0;0
+rel;true*;false*;true*;true*;true*;true*;true*;0;0;0;0
+rel;true*;false*;false*;true*;true*;true*;true*;0;0;0;0
+rel;false*;false*;rea;true*;true*;true*;true*;0;0;0;0
+rel;false*;false*;true*;true*;true*;true*;true*;0;0;0;0
+rel;false*;false*;false*;true*;true*;true*;true*;0;0;0;0
+rel;false*;true*;rea;true*;true*;true*;true*;0;0;0;0
+rel;del;true*;true*;true*;true*;true*;true*;0;0;0;0
+rel;true*;true*;true*;true*;true*;true*;true*;0;0;0;0
+rel;false*;true*;true*;true*;true*;true*;true*;0;0;0;0
+true*;del;true*;true*;inv;true*;true*;true*;0;0;0;0
+true*;del;true*;true*;true*;true*;true*;true*;0;0;0;0
+true*;del;true*;true*;false*;true*;true*;true*;0;0;0;0
+true*;true*;true*;true*;inv;true*;true*;true*;0;0;0;0
+true*;true*;true*;true*;true*;true*;true*;true*;0;0;0;0
+true*;true*;true*;true*;false*;true*;true*;true*;0;0;0;0
+true*;false*;true*;true*;inv;true*;true*;true*;0;0;0;0
+true*;false*;true*;true*;true*;true*;true*;true*;0;0;0;0
+true*;false*;true*;true*;false*;true*;true*;true*;0;0;0;0
+rel;false*;true*;false*;true*;true*;true*;true*;0;0;0;0
+true*;true*;true*;rea;true*;true*;true*;true*;0;0;0;0
+true*;true*;true*;false*;true*;true*;true*;true*;0;0;0;0
+true*;del;true*;rea;true*;true*;true*;true*;0;0;0;0
+true*;del;true*;false*;true*;true*;true*;true*;0;0;0;0
+true*;false*;fin;rea;true*;true*;true*;true*;0;0;0;0
+true*;false*;fin;true*;true*;true*;true*;true*;0;0;0;0
+true*;false*;fin;false*;true*;true*;true*;true*;0;0;0;0
+false*;false*;fin;false*;true*;true*;true*;true*;0;0;0;0
+true*;true*;fin;true*;true*;true*;true*;true*;0;0;0;0
+true*;true*;fin;false*;true*;true*;true*;true*;0;0;0;0
+true*;true*;fin;rea;true*;true*;true*;true*;0;0;0;0
+true*;true*;true*;false*;inv;true*;true*;true*;0;0;0;0
+true*;true*;true*;rea;inv;true*;true*;true*;0;0;0;0
+true*;del;true*;rea;inv;true*;true*;true*;0;0;0;0
+true*;del;true*;false*;inv;true*;true*;true*;0;0;0;0
+true*;false*;fin;rea;inv;true*;true*;true*;0;0;0;0
+true*;false*;fin;true*;inv;true*;true*;true*;0;0;0;0
+true*;false*;fin;false*;inv;true*;true*;true*;0;0;0;0
+true*;del;fin;rea;true*;true*;true*;true*;0;0;0;0
+true*;del;fin;true*;true*;true*;true*;true*;0;0;0;0
+true*;del;fin;false*;true*;true*;true*;true*;0;0;0;0
+true*;true*;fin;rea;inv;true*;true*;true*;0;0;0;0
+true*;true*;fin;true*;inv;true*;true*;true*;0;0;0;0
+true*;true*;fin;false*;inv;true*;true*;true*;0;0;0;0
+true*;del;fin;true*;inv;true*;true*;true*;0;0;0;0
+true*;del;fin;false*;inv;true*;true*;true*;0;0;0;0
+false*;false*;true*;false*;true*;true*;true*;true*;0;0;0;0
+true*;del;fin;rea;false*;true*;true*;true*;0;0;0;0
+true*;del;fin;true*;false*;true*;true*;true*;0;0;0;0
+true*;del;fin;false*;false*;true*;true*;true*;0;0;0;0
+true*;del;true*;rea;false*;true*;true*;true*;0;0;0;0
+true*;del;true*;false*;false*;true*;true*;true*;0;0;0;0
+true*;true*;fin;rea;false*;true*;true*;true*;0;0;0;0
+true*;true*;fin;true*;false*;true*;true*;true*;0;0;0;0
+true*;true*;fin;false*;false*;true*;true*;true*;0;0;0;0
+true*;true*;true*;rea;false*;true*;true*;true*;0;0;0;0
+true*;true*;true*;false*;false*;true*;true*;true*;0;0;0;0
+true*;false*;fin;rea;false*;true*;true*;true*;0;0;0;0
+true*;false*;fin;true*;false*;true*;true*;true*;0;0;0;0
+true*;false*;fin;false*;false*;true*;true*;true*;0;0;0;0
+true*;false*;true*;rea;inv;true*;true*;true*;0;0;0;0
+true*;false*;true*;rea;true*;true*;true*;true*;0;0;0;0
+true*;false*;true*;rea;false*;true*;true*;true*;0;0;0;0
+true*;false*;true*;false*;inv;true*;true*;true*;0;0;0;0
+true*;false*;true*;false*;true*;true*;true*;true*;0;0;0;0
+true*;false*;true*;false*;false*;true*;true*;true*;0;0;0;0
