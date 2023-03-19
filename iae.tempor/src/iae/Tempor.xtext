@@ -88,10 +88,17 @@ Comma:
 
 
 Expr:
-	obj=ID Dot prop=ID
+	obj=ID Dot prop=ID | 
+	Art obj=ID Dot prop=ID  //with an article
+;
+
+
+Art:
+	'the' | 'a' | 'an'	
+	
 ;
 
 Dot:
-	'is' | 'was'
+	'is' | 'was' | 'are' | 'were'
 ;
 
