@@ -20,8 +20,8 @@ Requirement:
 'if' trig=Expr Comma 'then' notdel=Expr 'until' 'perhaps' rel=Expr 'or' rea=Expr 'happens' |
 'if' trig=Expr Comma 'then' 'perhaps' fin=Expr 'will' 'happen' 'and' 'then' 'immediately' 'there' 'will' 'be' rea=Expr |
 'if' trig=Expr Comma 'then' 'perhaps' rel=Expr 'or' fin=Expr 'will' 'happen' 'along' 'with' 'an' 'immediate' rea=Expr |
-'if' trig=Expr Comma 'then' fin=Expr 'will' 'probably' 'happen' 'and' 'from' 'then' 'on' 'there' 'will' 'always' 'be' notdel=Expr |
-'if' trig=Expr Comma 'then' 'perhaps' fin=Expr 'will' 'happen' 'and' 'from' 'that' 'point' 'on' 'there' 'will' 'be' notdel=Expr 'until' 'perhaps' rea=Expr 'occurs' |
+'if' trig=Expr Comma 'then' fin=Expr 'will' 'probably' 'happen' 'and' 'from' 'then' 'there' 'will' 'always' 'be' notdel=Expr |
+'if' trig=Expr Comma 'then' 'perhaps' fin=Expr 'will' 'happen' 'and' 'from' 'that' 'point' 'there' 'will' 'be' notdel=Expr 'until' 'perhaps' rea=Expr 'occurs' |
 'if' trig=Expr Comma 'then' inv=Expr 'and' notdel=Expr Comma 'until' 'perhaps' rea=Expr 'happens' 'to' 'keep' inv2=Expr |
 'if' trig=Expr Comma 'then' inv=Expr 'and' notdel=Expr Comma 'until' 'perhaps' rel=Expr 'or' rea=Expr 'happens' Comma 'keeping' inv2=Expr |
 'if' trig=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr Comma 'until' 'perhaps' rel=Expr 'or' fin=Expr 'happens' 'to' 'keep' inv2=Expr |
@@ -30,13 +30,17 @@ Requirement:
 'if' trig=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr Comma 'until' 'perhaps' fin=Expr 'happens' 'to' 'keep' inv2=Expr 'and' 'immediately' rea=Expr |
 'if' trig=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr Comma 'until' 'perhaps' fin=Expr 'happens' 'and' 'from' 'then' 'there' 'will' 'always' 'be' inv2=Expr 'and' notdel=Expr |
 'if' trig=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr 'until' 'perhaps' fin2=Expr 'happens' 'and' 'from' 'then' inv2=Expr 'will' 'be' 'until' 'perhaps' rea=Expr 'happens' 'with' inv3=Expr 'saved' |
-'if' trig=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr 'until' 'perhaps' fin2=Expr 'happens' 'and' 'from' 'then' inv2=Expr 'will' 'be' 'along' 'with' notdel=Expr 'until' 'perhaps' rea=Expr 'happens' 'with' inv3=Expr 'saved' |
+'if' trig=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr 'until' 'perhaps' fin2=Expr 'happens' 'and' 'from' 'then' inv2=Expr 'will' 'be' 'along' 'with' notdel=Expr 'until' 'perhaps' rea=Expr 'happens' 
+	'with' inv3=Expr 'saved' |
 'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' 'perhaps' fin=Expr 'will' 'happen' 'and' 'from' 'then' 'there' 'will' 'be' notdel=Expr 'until' 'perhaps' rel2=Expr 'occurs' |
 'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' 'perhaps' fin=Expr 'will' 'happen' 'and' 'from' 'then' 'it' 'will' 'be' notdel=Expr 'until' 'perhaps' 'it' 'is' rel2=Expr 'or' rea=Expr |
 'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr 'until' 'perhaps' fin=Expr 'happens' 'and' 'from' 'then' inv2=Expr 'will' 'be' 'until' 'perhaps' rel2=Expr 'happens' |
-'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr Comma 'until' fin=Expr 'may' 'happen' 'and' 'from' 'then' inv2=Expr 'will' 'be' Comma 'until' 'it' 'may' 'be' rel2=Expr 'or' rea=Expr 'with' inv3=Expr 'preserved' |
-'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr 'until' 'perhaps' fin=Expr 'happens' 'and' 'from' 'then' inv2=Expr 'will' 'be' 'along' 'with' notdel=Expr 'until' 'perhaps' rel2=Expr 'happens' |
-'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr Comma 'until' 'perhaps' fin=Expr 'happens' Comma 'and' 'from' 'then' inv2=Expr 'will' 'be' 'along' 'with' notdel=Expr Comma 'until' 'perhaps' rel2=Expr 'or' rea=Expr 'with' inv3=Expr 'preserved' |
+'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr Comma 'until' fin=Expr 'may' 'happen' 'and' 'from' 'then' inv2=Expr 'will' 'be' Comma 'until' 'it' 'may' 'be' rel2=Expr 
+	'or' rea=Expr 'with' inv3=Expr 'preserved' |
+'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr 'until' 'perhaps' fin=Expr 'happens' 'and' 'from' 'then' inv2=Expr 'will' 'be' 'along' 'with' notdel=Expr 'until' 'perhaps'
+	 rel2=Expr 'happens' |
+'if' trig=Expr 'and' 'not' rel=Expr Comma 'then' inv=Expr 'and' 'not' notfin=Expr Comma 'until' 'perhaps' fin=Expr 'happens' Comma 'and' 'from' 'then' inv2=Expr 'will' 'be' 'along' 'with' notdel=Expr 
+	Comma 'until' 'perhaps' rel2=Expr 'or' rea=Expr 'with' inv3=Expr 'preserved' |
 
 'always' inv=Expr |
 'there' 'is' 'always' 'a' rea=Expr |
